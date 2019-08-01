@@ -3,7 +3,9 @@
     <div class="fillIn_maskMain" v-if="isAddAddress">
       <div>
         <span>新增地址</span>
-        <span @click="addAddress" class="iconfont icon-cuo"></span>
+        <span @click="addAddress" class="iconfont icon-cuo">
+          <b>×</b>
+        </span>
       </div>
       <!--  -->
       <div class="addAddressMain">

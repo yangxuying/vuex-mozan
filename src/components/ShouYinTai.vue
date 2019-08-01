@@ -42,7 +42,7 @@ export default {
             this.show = true;
             clearInterval(this.timer);
             this.timer = null;
-            this.$router.push({ path: "/paymc" });
+            this.$router.push({ path: "/vuex-mozan/paymc" });
           }
         }, 100);
       }

@@ -55,7 +55,7 @@
           </div>
           <div class="yushou-right">
             <ul v-for="index in indexs" :key="index.id">
-              <li style="align-items: end;">
+              <li style="align-items: end;margin-bottom: 20px">
                 <span class="sale-title">预售价</span>
                 <div style="margin-top: -10px;">
                   <span class="index-price">￥{{index.price}}</span>
@@ -369,6 +369,7 @@ export default {
   font-size: 14px;
   margin-right: 48px;
 }
+
 .yushou-right .style-side span {
   padding: 2px 6px;
   border: 1px solid #fff;

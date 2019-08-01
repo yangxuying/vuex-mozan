@@ -17,7 +17,13 @@
             <span @click="addAddress" style="border:1px solid #000;">+</span> 新增地址
           </span>
         </div>
-        <li v-for="address in addresses" :key="address.id">
+        <li
+          v-for="address in addresses"
+          :key="address.id"
+          class="liInner"
+          :class="address.isLiActive?'checked ':'bgBorder'"
+          @click="changeLiactive({id:address.id})"
+        >
           <div class="dizhi-left">
             <span>
               <img src="../assets/images/name_03.jpg" alt />
@@ -36,7 +42,8 @@
             </span>
           </div>
           <div class="dizhi-right">
-            <span>设置默认</span>
+            <span class="default" v-if="address.isDefault">默认</span>
+            <span v-else @click="changeDefault({id:address.id})">设置默认</span>
             <span>编辑</span>
             <span>
               <div class="delBox" v-show="address.isDelAddress">
@@ -197,6 +204,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 18px 22px;
+}
+.shangpin li {
   border-bottom: 1px solid #d1d7e3;
 }
 .dizhi li .dizhi-left span {
@@ -306,6 +315,7 @@ export default {
   margin-left: 880px;
   margin-top: 46px;
 }
+
 .dizhi li .dizhi-right {
   display: flex;
 }
@@ -344,5 +354,20 @@ export default {
   height: 100%;
   background-color: rgba(87, 87, 87, 0.644);
   z-index: 333;
+}
+.bgBorder {
+  border-bottom: 1px solid #d1d7e3;
+}
+.checked {
+  /* background-image: url("./../assets/images/border_10.jpg"); */
+  border: 2px solid #fdd900;
+  /* background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 10px; */
+}
+.default {
+  padding: 3px 8px;
+  background-color: rgba(34, 34, 34, 0.863);
+  color: rgba(231, 229, 229, 0.925);
 }
 </style>

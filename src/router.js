@@ -48,6 +48,6 @@ const router = new VueRouter({
   routes,
   //路由模式 默认为hash模式(通过锚点切换组件)/#/
   //有history模式
-  mode: 'hash'
+  mode: 'history'
 });
 export default router;

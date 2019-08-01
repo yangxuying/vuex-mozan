@@ -61,7 +61,7 @@
             <img src="../assets/images/pay_17.jpg" alt />
           </span>
         </div>
-        <router-link to="/shouyintai">
+        <router-link to="/vuex-mozan/shouyintai">
           <span class="fukuan">付&nbsp;&nbsp;款</span>
         </router-link>
       </div>

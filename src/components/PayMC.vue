@@ -18,7 +18,7 @@
             请您在新打开的网上银行页面进行支付
             <br />支付完成前请不要关闭该窗口！
           </p>
-          <router-link to="/paysuccess">
+          <router-link to="/vuex-mozan/paysuccess">
             <span>已完成支付</span>
           </router-link>
           <span>支付遇到问题</span>

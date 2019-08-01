@@ -12,7 +12,7 @@
             <span>数量：x1</span>
           </div>
           <span class="back" @click="back">返回</span>
-          <router-link to="/cart">
+          <router-link to="/vuex-mozan/cart">
             <span>去购物车结算</span>
           </router-link>
         </div>

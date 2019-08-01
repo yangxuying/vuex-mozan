@@ -22,7 +22,7 @@
               <span>成功支付：￥168.00</span>
             </div>
             <div class="payok-right">
-              <router-link to="/Cart">
+              <router-link to="/vuex-mozan/Cart">
                 <span>继续逛逛</span>
               </router-link>
               <span>查看订单</span>

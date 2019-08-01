@@ -118,7 +118,7 @@
           <span>=</span>
           <span class="payon-price-last">￥{{payGoodInfo.money}}</span>
         </div>
-        <router-link to="/shouyin">
+        <router-link to="/vuex-mozan/shouyin">
           <span class="tijiao">提交订单</span>
         </router-link>
       </div>

@@ -100,7 +100,7 @@
         </div>
         <div class="yushou-bot">
           <span>
-            <router-link to="/addcart">立即预约</router-link>
+            <router-link to="/vuex-mozan/addcart">立即预约</router-link>
           </span>
         </div>
       </div>

@@ -12,35 +12,35 @@ Vue.use(VueRouter);
 const routes = [
   {
     component: Home,
-    path: '/'
+    path: '/vuex-mozan'
   },
   {
     component: AddCart,
-    path: '/addcart'
+    path: '/vuex-mozan/addcart'
   },
   {
     component: Cart,
-    path: '/cart'
+    path: '/vuex-mozan/cart'
   },
   {
     component: DingDan,
-    path: '/dingdan'
+    path: '/vuex-mozan/dingdan'
   },
   {
     component: ShouYin,
-    path: '/shouyin'
+    path: '/vuex-mozan/shouyin'
   },
   {
     component: ShouYinTai,
-    path: '/shouyintai'
+    path: '/vuex-mozan/shouyintai'
   },
   {
     component: PaySuccess,
-    path: '/paysuccess'
+    path: '/vuex-mozan/paysuccess'
   },
   {
     component: PayMC,
-    path: '/paymc'
+    path: '/vuex-mozan/paymc'
   }
 ];
 const router = new VueRouter({
@@ -48,6 +48,6 @@ const router = new VueRouter({
   routes,
   //路由模式 默认为hash模式(通过锚点切换组件)/#/
   //有history模式
-  mode: 'history'
+  mode: 'hash'
 });
 export default router;
